@@ -47,7 +47,7 @@ set fileencoding=utf-8
 
 " Colorscheme >>>---------------------------------------------
 syntax on
-set background=dark
+" set background=dark "I'm not if it should be set at all
 colorscheme jellybeans 
 
 " NERDTree ---------------------------------------------------
