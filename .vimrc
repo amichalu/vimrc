@@ -3,28 +3,35 @@ filetype off                  " required
 set backspace=indent,eol,start
 set t_Co=256
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" Specify a directory for plugins
+" - For Neovim: ~/.local/share/nvim/plugged
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
 
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-Plugin 'bling/vim-airline'
+
+Plug 'gmarik/Vundle.vim'
+Plug 'bling/vim-airline'
 " Plugin 'pangloss/vim-javascript'
-Plugin 'Shougo/unite.vim'
+Plug 'Shougo/unite.vim'
 
 " Plugin 'Valloric/YouCompleteMe'
 
 " Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
 
-Plugin 'wincent/command-t'
+Plug 'wincent/command-t'
+
+" Plug 'junegunn/seoul256.vim'
+
+Plug 'nanotech/jellybeans.vim'
+
+" Initialize plugin system
+call plug#end()
+
+color jellybeans
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
@@ -48,7 +55,7 @@ set fileencoding=utf-8
 " Colorscheme >>>---------------------------------------------
 syntax on
 " set background=dark "I'm not if it should be set at all
-colorscheme jellybeans 
+" colorscheme jellybeans 
 
 " NERDTree ---------------------------------------------------
 map <C-n> :NERDTreeToggle<CR>
