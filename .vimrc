@@ -10,12 +10,12 @@ call plug#begin('~/.vim/plugged')
 
 
 Plug 'bling/vim-airline'
-" Plugin 'pangloss/vim-javascript'
+" Plug 'pangloss/vim-javascript'
 Plug 'Shougo/unite.vim'
 
-" Plugin 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
 
-" Plugin 'kien/ctrlp.vim'
+" Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
 
