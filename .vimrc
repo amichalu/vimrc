@@ -9,7 +9,6 @@ set t_Co=256
 call plug#begin('~/.vim/plugged')
 
 
-Plug 'gmarik/Vundle.vim'
 Plug 'bling/vim-airline'
 " Plugin 'pangloss/vim-javascript'
 Plug 'Shougo/unite.vim'
