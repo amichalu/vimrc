@@ -1,6 +1,7 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 set backspace=indent,eol,start
+set hlsearch
 set t_Co=256
 
 " Specify a directory for plugins
