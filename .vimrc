@@ -72,7 +72,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 let g:syntastic_php_phpcs_args='--tab-width=0'
-set tabstop=8
+set tabstop=4
 
 " CtrlP ------------------------------------------------------
 " let g:ctrlp_map = '<c-p>'
