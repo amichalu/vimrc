@@ -26,6 +26,8 @@ Plug 'wincent/command-t'
 
 Plug 'nanotech/jellybeans.vim'
 
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 " Initialize plugin system
 call plug#end()
 
